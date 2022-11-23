@@ -1,0 +1,38 @@
+
+.logo{
+    width: 100px;
+}
+
+.CarritoBoton{
+    border-radius: 5px;
+}
+
+.Cart{
+    display: flex;
+    align-items: center;
+}
+
+.CartSvg{
+    width: 30px;
+    height: 30px;
+
+}
+
+
+.navbar{
+    background-color: rgb(47, 22, 90);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+
+.boton{
+    color: rgb(255, 255, 255);
+    background-color: rgb(115, 5, 159);
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+}
