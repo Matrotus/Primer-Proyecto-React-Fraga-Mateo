@@ -2,7 +2,7 @@ const products =  [
     { 
         id: '1', 
         name: 'iphone 12', 
-        price: 1000, 
+        price: 10, 
         category: 'celular', 
         img:'https://itechstore.com.ar/wp-content/uploads/2020/06/iphone-12-pro-gold-hero-600x710.png', 
         // img: '/images/nombredeimagen.jpg',
