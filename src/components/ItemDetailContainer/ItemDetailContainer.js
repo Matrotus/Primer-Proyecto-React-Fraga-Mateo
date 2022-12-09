@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react'
-import {getProductById} from '../asyncMock'
+import {getProductById} from '../../asyncMock'
 import { useParams} from 'react-router-dom'
 
 const ItemDetailContainer = () => {
@@ -19,7 +19,7 @@ const ItemDetailContainer = () => {
    
     return (
         <div>
-                <img src="{product.img}"/>
+                <img src={product.img}/>
                 <h3>{product.name}</h3>
                 <p> ${product.price}</p>
         </div>

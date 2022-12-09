@@ -1,14 +1,15 @@
-import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer"
+
+import Item from "../Item/Item";
 
 const ItemList = ({products}) => {
     return ( 
         <div>
         {
-                products.map(product => <ItemDetailContainer key={product.id} product={product}/>)
+                products.map(product => <Item key={product.id} product={product}/>)
                 
                 }
         
         </div>  
     )
 }
-export default ItemList
+export default ItemList;
