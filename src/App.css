@@ -5,19 +5,13 @@
 }
 
 .App {
-  text-align: center;
   background-color: rgb(255, 255, 255);
+  text-align: center;
 }
 
 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+/* .App-header {
   background-color: #2257c0;
   min-height: 100vh;
   display: flex;
@@ -26,7 +20,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: rgb(112, 55, 55);
-}
+} */
 
 .App-link {
   color: #61dafb;
@@ -36,3 +30,52 @@
   color: white;
 }
 
+
+
+.title-checkout { 
+  display: flex;
+  justify-content: center;
+}
+
+.form { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(9, 8, 8);
+  margin-top: 3rem;
+  margin-inline: 700px;
+  
+}
+
+.labelsForm { 
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  color: white;
+}
+
+.btn { 
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: rgb(182, 243, 243);
+  font-weight: bold;
+  border-radius: 20px;
+}
+.botonDetail { 
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+
+.botonDetail:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(100, 100, 253);
+}
+.addProduct { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
