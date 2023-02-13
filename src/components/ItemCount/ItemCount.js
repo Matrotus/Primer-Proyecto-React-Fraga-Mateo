@@ -15,7 +15,7 @@ const Counter = ({initial , stock, onAdd}) => {
     // }
     const notifyStock = () => toast("You reached quantity allowed");
     const increment = ()=> {
-        if(count <stock){
+        if(count < stock){
             setCount(count + 1)
         }else{
             notifyStock()

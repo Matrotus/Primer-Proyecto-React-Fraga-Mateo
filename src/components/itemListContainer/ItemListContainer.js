@@ -5,33 +5,43 @@ import { getDocs, collection, query, where, orderBy } from "firebase/firestore"
 import { db } from "../../services/firebase/firebaseConfig"
 const ItemListContainer = () => {
         const [products,setProducts] = useState ([])
-
+        const [loading, setLoading] = useState(true)
         const {categoryId} = useParams()
         
         useEffect (() => { 
-
-        const collectionRef = categoryId
+        setLoading(true)
+        const productsRef = categoryId
         ? query(collection(db, 'products'), where('category', '==', categoryId))
         : query(collection(db, 'products'), orderBy('price', 'desc'))
 
 
-        getDocs(collectionRef).then(response => {
-                const adaptedProducts = response.docs.map(doc => { 
+        getDocs(productsRef)
+                .then(response => {
+                        const adaptedProducts = response.docs.map(doc => { 
                         const data = doc.data()
 
                         return {id: doc.id, ...data}
                 })
                 
                 setProducts(adaptedProducts)
+        }).catch(error => {
+                console.log(error)
+        })
+        .finally(()=> { 
+                setLoading(false)
         })
                 
                 
 
         }, [categoryId])
 
+        if(loading) { 
+                return <img></img>
+        }
+
         return ( 
                 <div>
-                        <h1>Listado de productos</h1>
+                        <h1 className="title-list">Listado de productos</h1>
                         <ItemList products={products} />
 
                 </div>
