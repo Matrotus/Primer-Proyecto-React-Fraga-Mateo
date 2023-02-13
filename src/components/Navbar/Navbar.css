@@ -57,3 +57,12 @@ a {
     color: #000;
     text-decoration: underline;
 }
+
+.login-btn{ 
+    
+    color: rgb(0, 0, 0);
+    background-color: rgb(221, 241, 244);
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 1rem;
+}

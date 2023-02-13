@@ -54,28 +54,65 @@
   color: white;
 }
 
-.btn { 
-  padding: 1rem;
-  margin-top: 2rem;
-  background-color: rgb(182, 243, 243);
-  font-weight: bold;
-  border-radius: 20px;
-}
-.botonDetail { 
+
+.tarjeta { 
   background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  padding: 1rem;
-  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+
 }
 
-
-.botonDetail:hover {
-  color: rgb(255, 255, 255);
-  background-color: rgb(100, 100, 253);
-}
 .addProduct { 
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
+}
+
+.btn { 
+  background-color:white ;
+  font-weight: 400;
+  font-size: 2rem;
+  width: 50px;
+  border: 1px solid;
+  border-radius: 50px;
+  
+  
+}
+
+.btn:hover{
+  background-color: blueviolet;
+  color: white;
+}
+
+.btn-add{ 
+  display: flex;
+  flex-direction: column;
+  background-color: blueviolet;
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 1rem;
+  border: 0;
+  border-radius: 5px;
+}
+
+.btn-red { 
+  background-color: red;
+  font-weight: 400;
+  font-size: 2rem;
+  width: 50px;
+  border: 1px solid;
+  border-radius: 50px;
+}
+.botones {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
 }

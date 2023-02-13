@@ -1,8 +1,8 @@
 import {Link} from 'react-router-dom'
 
-
 const Item = ({ product }) => {
-    return (
+        
+        return (
         <div>
                 <img src= {product.img} style = {{width: 200}} />
                 <h3>{product.name}</h3>

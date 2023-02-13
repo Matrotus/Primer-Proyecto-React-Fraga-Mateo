@@ -1,12 +1,12 @@
 import { useContext } from "react"
-import { CartContext } from "../../components/context/CartContext"
+import { CartProvider } from "../../context/CartContext"
 import "./cart.css"
 import { Link } from "react-router-dom"
 
 
 
 const Products = () => { 
-    const { AddedProducts } = useContext(CartContext)
+    const { AddedProducts } = useContext(CartProvider)
 
     return (
         <div>
