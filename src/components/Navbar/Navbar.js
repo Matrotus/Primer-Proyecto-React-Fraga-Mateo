@@ -15,7 +15,7 @@ const Navbar = () => {
             <img className='logo' src={"../images/Apple.png"}></img>
             <NavLink to= '/' className={({isActive}) => isActive ? 'BotonActive' : 'boton'} >All</NavLink>
             <NavLink to= '/category/celular' className={({isActive}) => isActive ? 'BotonActive' : 'boton'} >Phones</NavLink>
-            <NavLink to= '/category/tablet' className={({isActive}) => isActive ? 'BotonActive' : 'boton'} >Tablets</NavLink>
+            <NavLink to= '/category/laptop' className={({isActive}) => isActive ? 'BotonActive' : 'boton'} >Laptops</NavLink>
             {user &&
                 <Link to = '/Cart'>
                     <img className="CartSvg" src={"./images/cart.svg"}></img>{totalQuantity}

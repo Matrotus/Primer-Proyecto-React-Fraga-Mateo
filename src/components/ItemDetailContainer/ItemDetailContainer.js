@@ -40,16 +40,9 @@ const ItemDetailContainer = () => {
         }, [productId])
 
     if(loading) { 
-        return (
-            <ClipLoader
-        color={color}
-        loading={loading}
-        size={150}
-        aria-label="Loading Spinner"
-        data-testid="loader"
-/>
+        return <h1>Loading...</h1>
 
-        )
+        
     }
     
     

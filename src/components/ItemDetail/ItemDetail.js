@@ -33,7 +33,7 @@ const ItemDetail = ({id,name,img, description, price,stock}) => {
                 { isInCart(id)
                 ? <Link to = '/cart'>Terminar Compra</Link> 
                 : stock > 0
-                ? <Counter initial={0} stock={15} onAdd={handleOnAdd}/>
+                ? <Counter initial={0} stock={stock} onAdd={handleOnAdd}/>
                 : <h1>No hay stock</h1> }
                 <ToastContainer />
                         
