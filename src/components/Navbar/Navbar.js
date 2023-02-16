@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return(
         <nav className = 'navbar'>
-            <img className='logo' src={"../images/Apple.png"}></img>
+            <img className='logo' src={"../images/logo.png"}></img>
             <NavLink to= '/' className={({isActive}) => isActive ? 'BotonActive' : 'boton'} >All</NavLink>
             <NavLink to= '/category/celular' className={({isActive}) => isActive ? 'BotonActive' : 'boton'} >Phones</NavLink>
             <NavLink to= '/category/laptop' className={({isActive}) => isActive ? 'BotonActive' : 'boton'} >Laptops</NavLink>

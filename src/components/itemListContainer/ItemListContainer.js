@@ -3,6 +3,7 @@ import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
 import { getDocs, collection, query, where, orderBy } from "firebase/firestore"
 import { db } from "../../services/firebase/firebaseConfig"
+import '../itemListContainer/ItemListContainer.css'
 const ItemListContainer = () => {
         const [products,setProducts] = useState ([])
         const [loading, setLoading] = useState(true)
@@ -40,9 +41,9 @@ const ItemListContainer = () => {
         }
 
         return ( 
-                <div>
-                        <h1 className="title-list">Listado de productos</h1>
-                        <ItemList products={products} />
+                <div className="listado-productos">
+                        <h1 className="title-listado">Listado de productos</h1>
+                        <ItemList className = "title-list" products={products} />
 
                 </div>
         )

@@ -1,6 +1,6 @@
 import { useState, useContext } from "react"
 import { AuthContext } from "../../context/AuthContext"
-
+import '../Login/Login.css'
 
 
 const Login = () => { 
@@ -28,13 +28,14 @@ const Login = () => {
 
     return ( 
         <div>
-            <h1>Login</h1>
-            <form onSubmit = {handleSubmit}>
-                username:
-                <input value={username} onChange ={(e) => setUserName(e.target.value)}/>
-                password:
-                <input value={password} onChange ={(e) => setPassword(e.target.value)}/>
-                <button type="submit">Login</button>
+            
+            <form className="form-login" onSubmit = {handleSubmit}>
+                <h1 className="title-login">Login</h1>
+                <h3 className="id-login">Username:</h3>
+                <input className="input-login" value={username} onChange ={(e) => setUserName(e.target.value)}/>
+                <h3 className="id-login">Password:</h3>
+                <input  className="input-login" value={password} onChange ={(e) => setPassword(e.target.value)}/>
+                <button className="btn-login" type="submit">Login</button>
             </form>
         </div>
     )

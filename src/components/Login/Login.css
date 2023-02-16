@@ -1,0 +1,36 @@
+.form-login { 
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(18, 144, 218);
+    justify-content: center;
+    align-items: center;
+    margin-inline: 600px;
+    padding: 4rem;
+    margin-top: 5rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.title-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.id-login { 
+    display: flex;
+}
+.btn-login {
+    display: flex;
+    align-content: center;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    margin-top: 1rem;
+    font-weight: bolder;
+    
+}
+.input-login { 
+    padding: .5rem;
+    width: 400px;
+}
