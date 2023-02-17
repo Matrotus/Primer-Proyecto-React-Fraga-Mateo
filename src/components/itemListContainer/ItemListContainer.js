@@ -6,6 +6,7 @@ import { db } from "../../services/firebase/firebaseConfig"
 import '../itemListContainer/ItemListContainer.css'
 const ItemListContainer = () => {
         const [products,setProducts] = useState ([])
+        console.log(products)
         const [loading, setLoading] = useState(true)
         const {categoryId} = useParams()
         
