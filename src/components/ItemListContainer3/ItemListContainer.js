@@ -38,7 +38,7 @@ const ItemListContainer = () => {
         }, [categoryId])
 
         if(loading) { 
-                return <img></img>
+                return <img alt="foto"></img>
         }
 
         return ( 
